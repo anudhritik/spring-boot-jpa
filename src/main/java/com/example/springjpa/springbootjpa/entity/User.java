@@ -1,12 +1,22 @@
 package com.example.springjpa.springbootjpa.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+// Table-User
+
+@Entity
 public class User {
+	
+	@Id
+	@GeneratedValue
 	private long id;
 	private String name;
 	private String role;
-	
-	protected User(){
-		
+
+	protected User() {
+
 	}
 
 	public User(String name, String role) {
